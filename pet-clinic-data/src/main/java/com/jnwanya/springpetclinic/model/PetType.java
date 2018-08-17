@@ -9,7 +9,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public class PetType {
+public class PetType extends BaseEntity{
 
     private String name;
 }
