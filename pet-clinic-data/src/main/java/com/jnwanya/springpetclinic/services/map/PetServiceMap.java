@@ -1,7 +1,7 @@
 package com.jnwanya.springpetclinic.services.map;
 
 import com.jnwanya.springpetclinic.model.Pet;
-import com.jnwanya.springpetclinic.services.CrudService;
+import com.jnwanya.springpetclinic.services.PetService;
 
 import java.util.Set;
 
@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by Jnwanya on
  * Sat, 18 Aug, 2018.
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {

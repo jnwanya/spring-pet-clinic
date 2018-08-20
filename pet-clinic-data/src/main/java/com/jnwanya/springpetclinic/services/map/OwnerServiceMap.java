@@ -1,7 +1,7 @@
 package com.jnwanya.springpetclinic.services.map;
 
 import com.jnwanya.springpetclinic.model.Owner;
-import com.jnwanya.springpetclinic.services.CrudService;
+import com.jnwanya.springpetclinic.services.OwnerService;
 
 import java.util.Set;
 
@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by Jnwanya on
  * Sat, 18 Aug, 2018.
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -34,5 +34,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
