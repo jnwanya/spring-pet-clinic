@@ -2,6 +2,7 @@ package com.jnwanya.springpetclinic.services.map;
 
 import com.jnwanya.springpetclinic.model.Vet;
 import com.jnwanya.springpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -9,6 +10,7 @@ import java.util.Set;
  * Created by Jnwanya on
  * Sat, 18 Aug, 2018.
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
